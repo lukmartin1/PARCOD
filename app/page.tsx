@@ -113,6 +113,7 @@ export default function Home() {
         </motion.div>
       </section>
 
+
       <section id="trabajo" className="py-24 px-8 max-w-7xl mx-auto">
         <div className="mb-16">
           <h2 className="text-4xl md:text-6xl font-display font-bold mb-4 relative inline-block group">

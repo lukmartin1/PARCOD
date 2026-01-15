@@ -14,8 +14,15 @@ export default function BackgroundAnimation() {
     let width = (canvas.width = window.innerWidth)
     let height = (canvas.height = window.innerHeight)
 
+    // Determinar número de partículas según tamaño de pantalla
+    const getParticleCount = () => {
+      if (width < 768) return 40 // Móvil
+      if (width < 1024) return 60 // Tablet
+      return 100 // Desktop
+    }
+
     const particles: Particle[] = []
-    const particleCount = 100
+    let particleCount = getParticleCount()
     const connectionDistance = 150
 
     class Particle {
@@ -24,6 +31,7 @@ export default function BackgroundAnimation() {
       vx: number
       vy: number
       size: number
+      
 
       constructor() {
         this.x = Math.random() * width
@@ -86,6 +94,16 @@ export default function BackgroundAnimation() {
     const handleResize = () => {
       width = canvas.width = window.innerWidth
       height = canvas.height = window.innerHeight
+
+      // Recalcular número de partículas según nuevo tamaño
+      const newParticleCount = getParticleCount()
+      if (newParticleCount !== particleCount) {
+        particleCount = newParticleCount
+        particles.length = 0
+        for (let i = 0; i < particleCount; i++) {
+          particles.push(new Particle())
+        }
+      }
     }
 
     window.addEventListener("resize", handleResize)
