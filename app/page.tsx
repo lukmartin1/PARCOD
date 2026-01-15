@@ -6,23 +6,23 @@ import { ExternalLink } from "lucide-react"
 
 const projects = [
   {
-    title: "Cabañas del Sol",
+    title: "La Arboleda Cabañas",
     category: "Inmobiliaria / Vacacional",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/public/la-arboleda.png",
     description: "Experiencia moderna de alquiler vacacional con integración de reservas sin fisuras.",
     link: "https://cabanas-3.vercel.app",
   },
   {
     title: "Solar Design Studio",
     category: "Arquitectura / Sostenibilidad",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/public/alphasolar.png",
     description: "Plataforma de diseño arquitectónico ecológico enfocada en energía solar.",
     link: "https://solar-design-studio-frontend-erix.vercel.app",
   },
   {
     title: "Bungalows Los Pinos",
     category: "Hospitalidad",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/public/los-pinos.png",
     description: "Gestión de retiro enfocado en la naturaleza y presencia digital.",
     link: "https://bung-los-pinos.vercel.app",
   },
