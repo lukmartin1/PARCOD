@@ -8,21 +8,21 @@ const projects = [
   {
     title: "La Arboleda Cabañas",
     category: "Inmobiliaria / Vacacional",
-    image: "/public/la-arboleda.png",
+    image: "/la-arboleda.png",
     description: "Experiencia moderna de alquiler vacacional con integración de reservas sin fisuras.",
     link: "https://cabanas-3.vercel.app",
   },
   {
     title: "Solar Design Studio",
     category: "Arquitectura / Sostenibilidad",
-    image: "/public/alphasolar.png",
+    image: "/alphasolar.png",
     description: "Plataforma de diseño arquitectónico ecológico enfocada en energía solar.",
     link: "https://solar-design-studio-frontend-erix.vercel.app",
   },
   {
     title: "Bungalows Los Pinos",
     category: "Hospitalidad",
-    image: "/public/los-pinos.png",
+    image: "/los-pinos.png",
     description: "Gestión de retiro enfocado en la naturaleza y presencia digital.",
     link: "https://bung-los-pinos.vercel.app",
   },
@@ -160,10 +160,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contacto" className="relative w-full py-24 px-4 sm:px-8 lg:px-8 max-w-6xl mx-auto">
+      <section id="contacto" className="relative w-screen left-1/2 -translate-x-1/2">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-10% via-black/70 to-black/90 -z-10" />
-
-        <div className="mb-16">
+        <div className="py-24 px-4 sm:px-8 lg:px-8 max-w-6xl mx-auto relative">
+          <div className="mb-16">
           <h2 className="text-4xl md:text-6xl font-display font-bold mb-4 relative inline-block">
             Contacto
             <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-white to-transparent" />
@@ -210,6 +210,7 @@ export default function Home() {
             </a>
           </div>
         </motion.div>
+        </div>
       </section>
 
       <footer className="bg-black py-12 px-8">
