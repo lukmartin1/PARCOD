@@ -103,13 +103,12 @@ export default function Home() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl md:text-5xl font-display font-bold mb-8 relative inline-block group">
-            Creando Futuros Digitales
+            Tu Futuro Digital
             <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-white to-transparent transform origin-left transition-transform duration-500" />
           </h2>
           <p className="text-xl md:text-2xl font-sans leading-relaxed text-white/70 italic">
-            "En PARCOD, fusionamos tecnología de vanguardia con diseño disruptivo para crear experiencias digitales que
-            no solo existen—resuenan. Somos arquitectos de lo virtual, dedicados a empujar los límites de lo que es
-            posible."
+            "En PARCODE combinamos tecnología y diseño para crear sitios web funcionales, atractivos y optimizados.
+              Trabajamos de forma directa y personalizada para que tu presencia online sea clara, profesional y eficiente."
           </p>
         </motion.div>
       </section>
@@ -161,7 +160,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contacto" className="relative py-24 px-8 max-w-6xl mx-auto">
+      <section id="contacto" className="relative w-full py-24 px-4 sm:px-8 lg:px-8 max-w-6xl mx-auto">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-10% via-black/70 to-black/90 -z-10" />
 
         <div className="mb-16">
